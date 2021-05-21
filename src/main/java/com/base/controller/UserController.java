@@ -26,21 +26,6 @@ public class UserController {
 
     private user temp;
 
-    @RequestMapping("SignUp")
-    public String Sign(){
-        return "User/SignUp";
-    }
-
-    @RequestMapping("ForgetPw")
-    public String Forget(){
-        return "User/forgetPw";
-    }
-
-    @RequestMapping("userLogin")
-    public String SignIn(){return "User/user_Initialization";}
-
-    @RequestMapping("userList")
-    public String UserManager(){return "User/user_List";}
 
 
     /*
@@ -58,13 +43,7 @@ public class UserController {
         return userService.queryUserList(page,limit,user);
     }
 
-    /**
-     * 新增用户
-     */
-    @RequestMapping("add")
-    public String add_user(){
-        return "User/user_add";
-    }
+
 
     //保存方法
     @RequestMapping("userSave")

@@ -114,7 +114,7 @@
         first control system @iqffowqs
     </div>
 </div>
-
+</div>
 <script src="${basePath}/layui/layui.js"></script>
 <script src="${basePath}/images/jquery.js"></script>
 <script src="${basePath}/images/gt.js"></script>

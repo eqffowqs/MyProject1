@@ -139,7 +139,7 @@
                     updateVerify();
                     return false;
                 }
-                window.location.href="${basePath}/User/userLogin.action"
+                window.location.href="${basePath}/jump/userLogin.action"
             }
         })
     }

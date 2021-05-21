@@ -16,10 +16,7 @@ public class LoginController {
     @Autowired
     private UserService us;
 
-    @RequestMapping("index")
-    public String toLogin(){
-        return "login/login";
-    }
+
 
     @RequestMapping("login1")
     public @ResponseBody String Login(HttpServletRequest httpServletRequest,String username,String password,String code){

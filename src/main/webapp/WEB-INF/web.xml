@@ -4,7 +4,15 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
          id="WebApp_ID" version="3.0">
   <display-name>manager</display-name>
-
+  <!-- 编码过滤器结束 -->
+  <!-- 配置spring的监听器开始 -->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
   <!-- 编码过滤器开始 -->
   <filter>
     <filter-name>encodingFilter</filter-name>
@@ -22,15 +30,7 @@
     <filter-name>encodingFilter</filter-name>
     <url-pattern>*.action</url-pattern>
   </filter-mapping>
-  <!-- 编码过滤器结束 -->
-  <!-- 配置spring的监听器开始 -->
-  <listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-  </listener>
-  <context-param>
-    <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:applicationContext.xml</param-value>
-  </context-param>
+
   <!-- 配置spring的监听器结束 -->
   <!-- 配置前端控制器开始 -->
   <servlet>
