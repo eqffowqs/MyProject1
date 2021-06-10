@@ -33,7 +33,7 @@ public class UserController {
     * 传入参数：page--当前页 limit--每页条数
     * 输出对象：PageData{code--请求状态，默认0为成功；msg；count--数据总数；data--数据集合}
     */
-    @RequestMapping("list")//因为返回的是对象，又是ajax
+    @RequestMapping("userList")//因为返回的是对象，又是ajax
     public @ResponseBody PageData queryUserInfoList(Integer page,Integer limit
             ,String username){
         user user=new user();

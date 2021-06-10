@@ -44,20 +44,6 @@
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
         <div class="layui-logo">layui layout</div>
-        <!-- 头部区域（可配合layui已有的水平导航） -->
-        <ul class="layui-nav layui-layout-left">
-            <li class="layui-nav-item"><a href="">control</a></li>
-            <li class="layui-nav-item"><a href="">commodity</a></li>
-            <li class="layui-nav-item"><a href="">user</a></li>
-            <li class="layui-nav-item ">
-                <a href="javascript:;">other systems</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="">test1</a></dd>
-                    <dd><a href="">test2</a></dd>
-                    <dd><a href="">test3</a></dd>
-                </dl>
-            </li>
-        </ul>
         <ul class="layui-nav layui-layout-right">
             <li class="layui-nav-item">
                 <a href="javascript:;">
@@ -78,24 +64,18 @@
             <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
             <ul class="layui-nav layui-nav-tree"  lay-filter="test">
                 <li class="layui-nav-item ">
-                    <a  href="${basePath}/User/userList.action" target="iframe">user</a>
-                    <%--<dl class="layui-nav-child">
-                        <dd><a href="javascript:;">列表一</a></dd>
-                        <dd><a href="javascript:;">列表二</a></dd>
-                        <dd><a href="javascript:;">列表三</a></dd>
-                        <dd><a href="">超链接</a></dd>
-                    </dl>--%>
+                    <a  href="${basePath}/jump/userList.action" target="iframe">user</a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="javascript:;" target="iframe">products</a>
-                    <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">1</a></dd>
-                        <dd><a href="javascript:;">2</a></dd>
-                        <dd><a href="">3</a></dd>
-                    </dl>
+                    <a href="${basePath}/jump/productList.action" target="iframe">products</a>
+<%--                    <dl class="layui-nav-child">--%>
+<%--                        <dd><a href="javascript:;">1</a></dd>--%>
+<%--                        <dd><a href="javascript:;">2</a></dd>--%>
+<%--                        <dd><a href="javascript:;">3</a></dd>--%>
+<%--                    </dl>--%>
                 </li>
-                <li class="layui-nav-item"><a href="" target="iframe">orders</a></li>
-                <li class="layui-nav-item"><a href="" target="iframe">more</a></li>
+                <li class="layui-nav-item"><a href="${basePath}/jump/orderList.action" target="iframe">orders</a></li>
+                <li class="layui-nav-item"><a href="${basePath}/jump/moreList.action" target="iframe">more</a></li>
             </ul>
     </div>
 
